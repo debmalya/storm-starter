@@ -22,7 +22,11 @@ import java.util.Map;
 public class ExclamationTopology {
 
   public static class ExclamationBolt extends BaseRichBolt {
-    OutputCollector _collector;
+    /**
+	 * 
+	 */
+	private static final long serialVersionUID = -6259868366307789307L;
+	OutputCollector _collector;
 
     @Override
     public void prepare(Map conf, TopologyContext context, OutputCollector collector) {
